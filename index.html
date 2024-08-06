@@ -432,7 +432,6 @@
           </div>
         </div>
       </div>
-ion>
    
       <!-- End Facts Section -->
       <!-- ======= service ======= -->
@@ -449,7 +448,7 @@ ion>
 
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="work-box">
-                <div class="work-img"> <img src="assets/img/1.webp" alt="ماكس مان" class="img-fluid">
+                <div class="work-img"> <img src="assets/img/32.jpeg" alt="ماكس مان" class="img-fluid">
                 </div>
                 <div class="work-content text-right">
                   <div class="row">
@@ -465,7 +464,7 @@ ion>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
               <div class="work-box">
-                <div class="work-img"> <img src="assets/img/3.webp" alt="ماكس مان" class="img-fluid">
+                <div class="work-img"> <img src="assets/img/31.jpg" alt="ماكس مان" class="img-fluid">
                 </div>
                 <div class="work-content text-right">
                   <div class="row">
@@ -481,7 +480,7 @@ ion>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
               <div class="work-box">
-                <div class="work-img"> <img src="assets/img/2.webp" alt="ماكس مان" class="img-fluid">
+                <div class="work-img"> <img src="assets/img/30.jpeg" alt="ماكس مان" class="img-fluid">
                 </div>
                 <div class="work-content text-right">
                   <div class="row">
@@ -666,6 +665,18 @@ ion>
       }
     }
   });
+
+
+function fixOwlCurrentItem(event) {
+    var owlItem = $(event.target).find('.owl-item');
+    var owlStage = $(event.target).find('.owl-stage');
+    var currentItem = $(event.target).find('.owl-item.active').length;
+    var stageItemCount = owlItem.length;
+    
+    if (currentItem === stageItemCount) {
+      owlStage.css('transform', 'translate3d(0px, 0px, 0px)');
+    }
+  }
 });
     </script>
     
