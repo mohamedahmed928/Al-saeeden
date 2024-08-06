@@ -512,12 +512,13 @@ body {
   # About
   --------------------------------------------------------------*/
   .about {
-     /* ------جديد------
-    background: linear-gradient(#fff, rgba(0, 0, 0, 0.9)), url(../img/لوجو\ شركة\ الصاعدين\ الجديد.png) fixed center center;
      /* ------جديد------*/
-   background-color:rgb(117, 200, 228) ;
+    background: linear-gradient(#fff, rgba(0, 0, 0, 0.9)), url(../img/لوجو\ شركة\ الصاعدين\ الجديد.png) fixed center center;
+     /* ------جديد------
+   /*background-color:rgb(117, 200, 228) ;*/
     text-align: right;
     padding: 70px 0;
+    color: #000; /* Set a default text color */
   }
   .about img{
   border-radius: 10px;
@@ -526,18 +527,21 @@ body {
     padding: 0;
   }
   .about ul li {
-    color: #444;
+    /*color: #444;*/
+    color: #000; /* Changed to black for better visibility */
     display: block;
     padding: 5px 0;
     font-size: 15px;
   }
   .about p {
-    color: #444;
+    /*color: #444;*/
+    color: #000; /* Changed to black for better visibility */
     font-size: 16px;
     margin-bottom: 15px;
   }
   .img-sec{
-    z-index: 99999;
+    /*z-index: 99999;*/
+    z-index: 1; /* Changed from 99999 to 1 */
   }
   .about .dots {
     position: absolute;
@@ -546,6 +550,18 @@ body {
     z-index:-1;
     border-radius: 0;
   }
+
+  
+  .about .col-md-7 {
+    background-color: rgba(54, 101, 139, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about h4.sec-head {
+    color: #000;
+    margin-bottom: 15px;
+}
 
   /*--------------------------------------------------------------
   # rateus
@@ -557,6 +573,7 @@ body {
     /*background-color: rgb(62, 92, 180) ;*/
     text-align: right;
     padding: 70px 0;
+    color: #000; /* Set a default text color */
   }
   .rateus img{
   border-radius: 10px;
@@ -565,18 +582,22 @@ body {
     padding: 0;
   }
   .rateus ul li {
-    color: #444;
+    /*color: #444;*/
+    color: #000; /* Changed to black for better visibility */
     display: block;
     padding: 5px 0;
     font-size: 15px;
   }
   .rateus p {
-    color: #444;
+   /* color: #444;*/
+   color: #000; /* Changed to black for better visibility */
     font-size: 16px;
     margin-bottom: 15px;
+   
   }
   .img-sec{
-    z-index: 99999;
+    /*z-index: 99999;*/
+    z-index: 1; /* Changed from 99999 to 1 */
   }
   .rateus .dots {
     position: absolute;
@@ -585,6 +606,17 @@ body {
     z-index:-1;
     border-radius: 0;
   }
+
+  .rateus .col-md-7 {
+    background-color: rgba(54, 101, 139, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rateus h4.sec-head {
+    color: #000;
+    margin-bottom: 15px;
+}
 
   
   /*--------------------------------------------------------------
@@ -597,6 +629,7 @@ body {
     /*background-color: #1475b6 ;*/
     text-align: right;
     padding: 70px 0;
+    color: #000; /* Set a default text color */
   }
   .vision img{
   border-radius: 10px;
@@ -605,18 +638,22 @@ body {
     padding: 0;
   }
   .vision ul li {
-    color: #444;
+    /*color: #444;*/
+    color: #000; /* Changed to black for better visibility */
     display: block;
     padding: 5px 0;
     font-size: 15px;
   }
   .vision p {
-    color: #444;
+    /*color: #444;*/
+    color: #000; /* Changed to black for better visibility */
     font-size: 16px;
     margin-bottom: 15px;
   }
   .img-sec{
-    z-index: 99999;
+   /* z-index: 99999;*/
+   z-index: 1; /* Changed from 99999 to 1 */
+   position: relative;
   }
   .vision .dots {
     position: absolute;
@@ -625,6 +662,16 @@ body {
     z-index:-1;
     border-radius: 0;
   }
+  .vision .col-md-7 {
+    background-color: rgba(54, 101, 139, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vision h4.sec-head {
+    color: #000;
+    margin-bottom: 15px;
+}
 
   
   
