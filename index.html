@@ -294,10 +294,8 @@
       <!-- ======= شركائنا Section ======= -->
       <div id="partners" class="partner">
         <div class="container">
-          <h2 class="main-header wow fadeInDown" data-wow-delay="0.2s" data-sr-id="25" >
-            شركاؤنا </h2>
+          <h2 class="main-header wow fadeInDown" data-wow-delay="0.2s" data-sr-id="25" >شركاؤنا </h2>
           <div class="partner-carousel owl-carousel in-partner owl-rtl owl-loaded owl-drag">
-
             <div class="owl-stage-outer">
               <div class="owl-stage" style="transform: translate3d(1120px, 0px, 0px); transition: 4s; width: 2880px;">
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
@@ -374,37 +372,37 @@
                 </div>
                 <div class="owl-item cloned active" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src=""
+                    <img src="assets/img/7.png"
                       alt="بلدية رأس تنورة" title="بلدية رأس تنورة" class="img-fluid">
                   </div>
                 </div>
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src="assets/"
+                    <img src="assets/img/9.png"
                       alt="أمانة المنطقة الشرقية" title="أمانة المنطقة الشرقية" class="img-fluid">
                   </div>
                 </div>
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src="assets/img/"
+                    <img src="assets/img/10.png"
                       alt="بلدية محافظة الخفجي" title="بلدية محافظة الخفجي" class="img-fluid">
                   </div>
                 </div>
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src="assets/img/"
+                    <img src="assets/img/15.png"
                       alt="بلدية محافظة القطيف" title="بلدية محافظة القطيف" class="img-fluid">
                   </div>
                 </div>
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src="assets/img/" alt="ارامكو"
+                    <img src="assets/img/7.png" alt="ارامكو"
                       title="ارامكو" class="img-fluid">
                   </div>
                 </div>
                 <div class="owl-item cloned" style="width: 130px; margin-left: 30px;">
                   <div class="item">
-                    <img src="assets/img/"
+                    <img src="assets/img/5.png"
                       alt="بلدية النعيرية" title="بلدية النعيرية" class="img-fluid">
                   </div>
                 </div>
@@ -509,27 +507,27 @@
           <div class="row counters">
 
             <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="2187" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>عملائنا</p>
+              <p>سنوات الخبرة </p>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
               <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>مجتمعات سكنية</p>
+              <p>عدد المبانى والمسطحات الخضراء</p>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
               <span data-purecounter-start="0" data-purecounter-end="127" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>مصانع & ورش عمل</p>
+              <p> المشاريع المنفذة</p>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
               <span data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>صيانة مباني</p>
+              <p>المشاريع القائمة</p>
             </div>
 
           </div>
@@ -576,6 +574,7 @@
 
     </main><!-- End #main -->
 
+    
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
@@ -629,7 +628,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
-     $(document).ready(function(){
+    /* $(document).ready(function(){
   $('.partner-carousel').owlCarousel({
     rtl: true,  // for right-to-left
     loop: true,
@@ -646,24 +645,92 @@
         items: 3
       },
       1000:{
-        items: 7
+        items: 6
       }
     }
+  });*/
+/*----------------------------*/
+ /*$(document).ready(function(){
+  $('.partner-carousel').owlCarousel({
+    rtl: true,  // for right-to-left
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    smartSpeed: 1000,
+    responsive:{
+      0:{
+        items: 1
+      },
+      600:{
+        items: 3
+      },
+      1000:{
+        items: 7
+      }
+    },
+    onInitialized: startCarousel,
+    onTranslated: startCarousel
   });
 
-
-function fixOwlCurrentItem(event) {
-    var owlItem = $(event.target).find('.owl-item');
-    var owlStage = $(event.target).find('.owl-stage');
-    var currentItem = $(event.target).find('.owl-item.active').length;
-    var stageItemCount = owlItem.length;
-    
-    if (currentItem === stageItemCount) {
-      owlStage.css('transform', 'translate3d(0px, 0px, 0px)');
-    }
+  function startCarousel(event) {
+    var element = event.target;
+    $(element).trigger('stop.owl.autoplay');
+    $(element).trigger('play.owl.autoplay', [2000]);
   }
-});
-    </script>
+});*/
+/*----------------------------*/
+</script>
+<script>
+  $(document).ready(function(){
+    var $owl = $('.partner-carousel');
+    
+    $owl.owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: false,
+      smartSpeed: 1000,
+      responsive:{
+        0:{
+          items: 1
+        },
+        600:{
+          items: 3
+        },
+        1000:{
+          items: 6
+        }
+      }
+    });
+  
+    // Force the carousel to move one item
+    function forceNext() {
+      $owl.trigger('next.owl.carousel');
+    }
+  
+    // Set an interval to force movement
+    setInterval(forceNext, 3000);
+  
+    // Pause autoplay on mouseenter and resume on mouseleave
+    $owl.on('mouseenter', function() {
+      $owl.trigger('stop.owl.autoplay');
+    });
+    
+    $owl.on('mouseleave', function() {
+      $owl.trigger('play.owl.autoplay', [3000]);
+    });
+  });
+  </script>
+
+   
     
   </div>
 </body>
