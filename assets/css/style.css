@@ -5,9 +5,11 @@
 
 --------------------------------------------------------------*/
 
-
 #main-content {
   display: none; /* إخفاء المحتوى الأساسي */
+  font-family: Arial, sans-serif; /* تغيير نوع الخط */
+  color: #333; /* لون النص */
+  padding: 20px; /* تباعد داخلي */
 }
 
 #logo-screen {
@@ -16,12 +18,29 @@
   align-items: center;
   height: 100vh;
   width: 100%; /* تعديل العرض ليغطي الصفحة بالكامل */
-  background: #fff; /* خلفية بيضاء */
+  background: linear-gradient(to bottom, #f0f0f0, #fff); /* تغيير خلفية مع تأثير تدرج */
 }
 
 #logo-screen img {
-  width: 70vh; /* تعديل العرض للصورة نفسها */
-  margin: auto; /* توسيط الصورة داخل العنصر الحاوي */
+  width: 50%; /* تقليل حجم الصورة */
+  max-width: 300px; /* حد أقصى للعرض */
+  border-radius: 50%; /* تدوير الصورة */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل للصورة */
+}
+
+#main-content p {
+  font-size: 1.2em; /* حجم الخط */
+  line-height: 1.6; /* تباعد الأسطر */
+}
+
+#main-content a {
+  color: #007bff; /* لون الروابط */
+  text-decoration: none; /* إزالة تحتية الروابط */
+  transition: color 0.3s; /* تأثير عند التحويل */
+}
+
+#main-content a:hover {
+  color: #0056b3; /* تغيير لون الرابط عند التحويل */
 }
 
 /*-----------------------------------*/

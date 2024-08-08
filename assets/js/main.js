@@ -7,6 +7,15 @@
 
 /*-----------------------*/
 (function() {
+
+  /*window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('logo-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 2000); // 3 ثواني
+  });*/
+
+  
     "use strict";
   
     /**
@@ -34,7 +43,9 @@
         }
       }
     }
-  
+  /*------------------------------*/
+
+  /*--------------------------------*/
     /**
      * Easy on scroll event listener 
      */
@@ -321,13 +332,8 @@
       })
     });
   
-  /*
- window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.getElementById('logo-screen').style.display = 'none';
-      document.getElementById('main-content').style.display = 'block';
-    }, 2000); // 3 ثواني
-  });*/
+  
+
 /*--------------------parteners-----------------*/
 
 /**------------------------------------- */
